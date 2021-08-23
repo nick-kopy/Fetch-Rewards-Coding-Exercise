@@ -4,7 +4,6 @@ Script written by (mostly) Nicholas Kopystynsky for a take home test.
 
 import json
 import gzip
-
 import psycopg2
 
 def populate_sql(url, table):
@@ -18,7 +17,7 @@ def populate_sql(url, table):
                             user='postgres',
                             password='123456')
     
-    curr = conn.cursor()
+    cur = conn.cursor()
     
     # Defining some variables that change depending on what data you want
     if table == 'brands':
@@ -174,4 +173,4 @@ if __name__ == '__main__':
     populate_sql(url='data/brands.json.gz', table='brands')
     populate_sql(url='data/receipts.json.gz', table='receipts')
     
-    
+    print('SQL tables generated successfully')
