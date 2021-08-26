@@ -15,14 +15,14 @@ Besides that about 10-20% of the data is missing things like a user's state or a
 
 The receipts data also has item lists which don't lend themselves to the SQL database easily. It's qualitative data and definitely worth keeping even in it's current format for answering questions like "how have snack purchases grown recently?" The drawbacks being time investment to look into it and that it won't scale up as well outside the SQL database.
 
-Lastly I was able to answer your question about spending and item count on purchases with accepted or rejected bonus points. Accepted points purchases included 8184 items cumulatively and an average of $81.85 per purchase. Rejected points purchases on the other hand were 173 items cumulatively at an average of $23.32 per perchase. 
+Lastly I was able to answer your question about spending and item count on purchases with accepted or rejected bonus points. Accepted points purchases included 8184 items cumulatively and an average of $81.85 per purchase. Rejected points purchases on the other hand were 173 items cumulatively at an average of $23.32 per purchase. 
 
 I'm happy to discuss my findings or clarify anything, just shoot me a message.
 
 Best regards,  
 Nicholas Kopystynsky
 
-#### in terminal commands
+### In terminal commands
 
 If you already have Python and docker on your machine you can run the python script in this repository and query the SQL database yourself!
 
